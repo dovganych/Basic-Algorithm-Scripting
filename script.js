@@ -106,3 +106,11 @@ function rot13(str) { // LBH QVQ VG!
     else { return item;}
   }).join('');
 }
+function sumOfDigits(num){
+  var str = num.toString().split('').reduce(function(a,b){
+	  return (+a)+(+b);
+  }).toString();
+	return { value : str,
+	  length : str.length,
+  	};
+}
